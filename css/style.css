@@ -1,3 +1,12 @@
+
+.logotyp{
+    width: 15%;
+}
+
+.headernav{
+
+}
+
 body{
     background-color: #DAA975;
 }
@@ -9,3 +18,10 @@ header{
 footer{
     background-color: #DAA975;
 }
+
+@media (min-width: 768px)
+{
+
+
+}
+
