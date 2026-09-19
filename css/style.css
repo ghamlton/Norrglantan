@@ -3,9 +3,42 @@
     width: 15%;
 }
 
-.headernav{
-
+.heroimg{
+    width:100%;
 }
+
+.hero{
+    background-color: white;
+    text-align: center;
+}
+
+.headernav{
+background-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.button{
+    background-color: #C26604;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.headernav ul li{
+    padding: 5px;
+    border: 1px solid;
+}
+
+h1,h2,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 
 body{
     background-color: #DAA975;
@@ -16,7 +49,7 @@ header{
 }
 
 footer{
-    background-color: #DAA975;
+    background-color: #346F2D;
 }
 
 @media (min-width: 768px)
