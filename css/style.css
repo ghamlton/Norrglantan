@@ -12,6 +12,28 @@
     text-align: center;
 }
 
+.intro{
+    text-align: center;
+}
+
+.cardsection{
+    
+}
+
+.card{
+    background-color: white;
+    margin: 10px;
+}
+
+.cardimg{
+    width: 100%;
+}
+
+.cardtext{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
 .headernav{
 background-color: white;
 font-family: Georgia, 'Times New Roman', Times, serif
