@@ -1,6 +1,6 @@
 
-.logotyp{
-    width: 15%;
+.logotype{
+    width: 25%;
 }
 
 .heroimg{
@@ -14,10 +14,6 @@
 
 .intro{
     text-align: center;
-}
-
-.cardsection{
-    
 }
 
 .card{
@@ -45,6 +41,7 @@ font-family: Georgia, 'Times New Roman', Times, serif
     padding: 10px;
     margin: 10px;
     font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul{
@@ -52,15 +49,40 @@ ul{
     padding: 0;
 }
 
+.headerp1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .headernav ul li{
     padding: 5px;
     border: 1px solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footerp1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerp2{
+    display: flex;
+    justify-content: space-around;
 }
 
 h1,h2,h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+h1{
+    font-size: medium;
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 body{
     background-color: #DAA975;
