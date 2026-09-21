@@ -1,15 +1,16 @@
 
 .logotype{
-    width: 25%;
-}
-
-.heroimg{
-    width:100%;
+    width: 20%;
+    margin-right: 10px;
 }
 
 .hero{
     background-color: white;
     text-align: center;
+}
+
+.hero img{
+    max-width: 100%;
 }
 
 .intro{
@@ -19,10 +20,11 @@
 .card{
     background-color: white;
     margin: 10px;
+    box-shadow: 5px 10px 15px;
 }
 
 .cardimg{
-    width: 100%;
+    max-width: 100%;
 }
 
 .cardtext{
@@ -42,6 +44,10 @@ font-family: Georgia, 'Times New Roman', Times, serif
     margin: 10px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button:hover{
+    background-color: orange;
 }
 
 ul{
@@ -98,6 +104,66 @@ footer{
 
 @media (min-width: 768px)
 {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "header" "header" "header"
+        "hero" "hero" "hero"
+        "intro" "intro" "intro"
+        "cards" "cards" "cards"
+        "ending" "ending" "ending"
+        "footer" "footer" "footer"
+    }
+
+    .logotype{
+        width: 5%;
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    .headerp1{
+        display: flex;
+    }
+
+    .hero{
+        grid-area: hero;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .herotext{
+        color: white;
+        position: absolute;
+        left: 5%;
+        bottom: 40%;
+    }
+
+    .heroimg{
+        position: relative;
+        width: 100%;
+    }
+
+    .intro{
+        grid-area: intro;
+    }
+
+    .cardsection{
+        grid-area: cards;
+        display: flex;
+    }
+
+    .ending{
+        display: flex;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
 
 
 }
