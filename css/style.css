@@ -10,8 +10,12 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: white;
+}
+
 .hero{
-    background-color: white;
+    background-color: #DAA975;
     text-align: center;
 }
 
@@ -26,7 +30,7 @@ a{
 .card{
     background-color:#C26604;
     margin: 10px;
-    box-shadow: 5px 10px 20px;
+    border-radius: 5px;
 }
 
 .cardimg{
@@ -39,12 +43,13 @@ a{
 }
 
 .headernav{
-background-color: white;
+background-color:#C26604;
 font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .button{
     background-color: #C26604;
+    border-radius: 5px;
     font-size: 15px;
     padding: 10px;
     margin: 10px;
@@ -123,7 +128,7 @@ footer{
 {
 
     .logotype{
-        width: 5%;
+        width: 10%;
     }
 
     header{
@@ -186,6 +191,10 @@ footer{
         max-width: 20%;
     }
 
+    .card:hover{
+        box-shadow: 5px 10px 40px;
+    }
+
     .ending{
         flex-direction: row;
         justify-content: space-around;
@@ -198,21 +207,26 @@ footer{
         max-width: 30%;
     }
 
+      
     footer{
-        display: flex;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .footerp1{
+        grid-column: 1/2;
+        display: flex;
         flex-direction: row;
-        gap: 5%;
+        justify-content: flex-end
     }
 
     .footerp2{
-        flex-direction: row;
-        
-    
+        grid-column: 2/4;
     }
+
+   
+
+   
 
 }
 
