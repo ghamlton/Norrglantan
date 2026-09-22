@@ -1,7 +1,13 @@
+/*Denna första del är till för mobilsidan. Jag byggde den först och sedan modifierade css med media query för större skärmar*/
 
 .logotype{
     width: 20%;
     margin-right: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
 }
 
 .hero{
@@ -18,9 +24,9 @@
 }
 
 .card{
-    background-color: white;
+    background-color:#C26604;
     margin: 10px;
-    box-shadow: 5px 10px 15px;
+    box-shadow: 5px 10px 20px;
 }
 
 .cardimg{
@@ -53,6 +59,7 @@ font-family: Georgia, 'Times New Roman', Times, serif
 ul{
     list-style-type: none;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .headerp1{
@@ -64,13 +71,21 @@ ul{
 .headernav ul li{
     padding: 5px;
     border: 1px solid;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ending{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .footerp1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 .footerp2{
@@ -102,26 +117,31 @@ footer{
     background-color: #346F2D;
 }
 
+/*Delen nedanför är till för större skärmar. Mestadels modifieringar av existerande klasser för att kunna se bättre ut på större skärmar. */
+
 @media (min-width: 768px)
 {
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "header" "header" "header"
-        "hero" "hero" "hero"
-        "intro" "intro" "intro"
-        "cards" "cards" "cards"
-        "ending" "ending" "ending"
-        "footer" "footer" "footer"
-    }
 
     .logotype{
         width: 5%;
     }
 
     header{
-        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .headernav{
+        background-color: transparent;
+    }
+
+    .headernav ul{
+        display: flex;
+    }
+
+    .headernav ul li{
+        border: none;
     }
 
     .headerp1{
@@ -129,7 +149,6 @@ footer{
     }
 
     .hero{
-        grid-area: hero;
         background-color: transparent;
         position: relative;
     }
@@ -138,7 +157,10 @@ footer{
         color: white;
         position: absolute;
         left: 5%;
-        bottom: 40%;
+        bottom: 30%;
+        display: flex;
+        flex-direction: column;
+        max-width: 20%;
     }
 
     .heroimg{
@@ -146,25 +168,51 @@ footer{
         width: 100%;
     }
 
-    .intro{
-        grid-area: intro;
+    .intro{ 
+        display: flex;
+        justify-content: center;
+    }
+
+    .introtext{
+        max-width: 40%;
     }
 
     .cardsection{
-        grid-area: cards;
         display: flex;
+        justify-content: space-evenly
+    }
+
+    .card{
+        max-width: 20%;
     }
 
     .ending{
-        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: left;
+    }
+
+    .endingtext{
+        max-width: 30%;
     }
 
     footer{
-        grid-area: footer;
+        display: flex;
+        justify-content: space-evenly;
     }
 
+    .footerp1{
+        flex-direction: row;
+        gap: 5%;
+    }
 
-
+    .footerp2{
+        flex-direction: row;
+        
+    
+    }
 
 }
 
